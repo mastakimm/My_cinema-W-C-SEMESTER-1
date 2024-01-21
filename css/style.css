@@ -1,0 +1,25 @@
+.html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bg-image {
+    background-image: url("../assets/bg-mouettes.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+

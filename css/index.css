@@ -1,0 +1,78 @@
+.html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #3B1F2B;
+    background-size: cover;
+    color: #DBDFAC;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.movie_form, .form_user, .schedule {
+}
+
+.form-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 1vw 0;
+}
+
+select {
+    width: 100%;
+}
+
+small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background-color: #f6121d;
+}
+
+#form_user {
+    padding-top: 5vw;
+}
