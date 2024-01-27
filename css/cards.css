@@ -1,0 +1,171 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #561C24;
+}
+.container {
+    position: relative;
+    width: 80%;
+    margin: 2rem auto;
+    background-color: #E8D8C4;
+    border-radius: 10px;
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+}
+
+.home-button {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    background-color: #339DFF;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background: #fff;
+    color: #339DFF;
+    box-shadow: 0 4px 4px rgba(83, 100, 255, 0.32);
+}
+
+.card {
+    border-radius: 5px;
+    padding: 16px;
+    margin-top: 16px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card h1, .card h3 {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card table {
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.card th {
+    font-size: 1.2rem;
+}
+
+.card th, .card td {
+    text-align: left;
+    padding: 10px;
+}
+
+.grid {
+    margin: 80px 70px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 3px;
+}
+
+.grid > span {
+    padding: 5px 4px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    color: #6D2932;
+}
+
+input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+select {
+    border-radius: 12px;
+}
+
+.showhistory, .show_add_to_schedule, .add_to_history_submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.showhistory:hover {
+    background-color: #45a049;
+}
+
+.form_history, .add_movie, .this_movie_to_schedule {
+    background: #E8D8C4;
+    border-radius: 5px;
+    margin: 10px 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.this_movie_to_schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 50px;
+}
+
+input[type="datetime-local"] {
+    margin: 50px;
+}
+
+.add_to_history {
+    margin-bottom: 20px;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 5%;
+    left: 17%;
+}
+
+.form_add_to_history {
+    font-size: 1.2rem;
+    margin-top: 20%;
+}
+
+input[type='date'], input[type="text"] {
+    padding: 10px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

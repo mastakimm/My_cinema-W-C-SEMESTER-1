@@ -1,6 +1,6 @@
 <?php
 
-include_once ('db_connection.php');
+include_once 'db_connection.php';
 
 function select_genre()
 {
@@ -37,6 +37,28 @@ function select_membership()
             $id_subscription = $subscription['id'];
             $name_subscription = $subscription['name'];
             echo("<option value='$id_subscription'>$name_subscription</option>");
+        }
+    } catch (PDOException $e) {
+        echo "Error : " . $e->getMessage();
+        $dbh = null;
+    }
+}
+
+function select_id_room()
+{
+    try {
+        $dbh = db_connect("test", "Haribo39.");
+
+        $sql = "SELECT room.id, room.number FROM room
+        ORDER BY number;";
+
+        $request = $dbh->query($sql);
+        $rooms = $request->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($rooms as $room) {
+            $room_id = $room['id'];
+            $room_number = $room['number'];
+            echo ("<option value='$room_id'>$room_number</option>");
         }
     } catch (PDOException $e) {
         echo "Error : " . $e->getMessage();
